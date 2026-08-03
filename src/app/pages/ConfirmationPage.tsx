@@ -67,7 +67,7 @@ export function ConfirmationPage() {
       <div className="flex flex-wrap gap-3 justify-center">
         <Link
           to="/tracking"
-          className="px-6 py-2.5 bg-foreground text-primary-foreground text-sm font-semibold rounded-sm hover:bg-stone-800 transition-colors"
+          className="px-6 py-2.5 bg-accent text-accent-foreground text-xs font-semibold rounded-lg hover:bg-amber-600 transition-colors shadow-md cursor-pointer"
         >
           Track Order
         </Link>

@@ -162,8 +162,8 @@ export function ProductDetailPage() {
                     onClick={() => setSize(s)}
                     className={`w-10 h-10 text-sm font-medium rounded-md border transition-colors ${
                       size === s
-                        ? "border-foreground bg-foreground text-primary-foreground"
-                        : "border-border hover:border-stone-400"
+                        ? "border-accent bg-accent text-accent-foreground font-semibold shadow-sm"
+                        : "border-border hover:border-stone-400 text-foreground"
                     }`}
                   >
                     {s}

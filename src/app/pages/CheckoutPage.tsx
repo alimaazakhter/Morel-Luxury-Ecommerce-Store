@@ -88,9 +88,9 @@ export function CheckoutPage() {
               <div
                 className={`flex items-center gap-2 text-sm font-medium px-3 py-1.5 rounded-md transition-colors ${
                   step === s.id
-                    ? "bg-foreground text-primary-foreground"
+                    ? "bg-accent text-accent-foreground font-semibold shadow-sm"
                     : i < stepIndex
-                    ? "text-emerald-700"
+                    ? "text-emerald-500 font-semibold"
                     : "text-muted-foreground"
                 }`}
               >

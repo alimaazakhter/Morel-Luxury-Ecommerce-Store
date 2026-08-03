@@ -110,8 +110,8 @@ export function ProductListingPage() {
               onClick={() => setShowFilters(!showFilters)}
               className={`flex items-center gap-2 px-3 py-1.5 text-sm rounded-md border transition-colors ${
                 showFilters
-                  ? "border-foreground bg-foreground text-primary-foreground"
-                  : "border-border hover:border-foreground"
+                  ? "border-accent bg-accent text-accent-foreground font-semibold shadow-sm"
+                  : "border-border hover:border-foreground text-foreground"
               }`}
             >
               <SlidersHorizontal size={14} /> Filters
@@ -128,9 +128,9 @@ export function ProductListingPage() {
             <div className="hidden sm:flex items-center border border-border rounded-md overflow-hidden">
               <button
                 onClick={() => setViewMode("grid")}
-                className={`p-2 ${
+                className={`p-2 transition-colors ${
                   viewMode === "grid"
-                    ? "bg-foreground text-primary-foreground"
+                    ? "bg-accent text-accent-foreground font-semibold shadow-sm"
                     : "hover:bg-secondary text-foreground"
                 }`}
               >
@@ -138,9 +138,9 @@ export function ProductListingPage() {
               </button>
               <button
                 onClick={() => setViewMode("list")}
-                className={`p-2 ${
+                className={`p-2 transition-colors ${
                   viewMode === "list"
-                    ? "bg-foreground text-primary-foreground"
+                    ? "bg-accent text-accent-foreground font-semibold shadow-sm"
                     : "hover:bg-secondary text-foreground"
                 }`}
               >
@@ -171,9 +171,9 @@ export function ProductListingPage() {
                         <button
                           key={c}
                           onClick={() => handleCategoryChange(c)}
-                          className={`block w-full text-left text-sm px-2 py-1.5 rounded-md transition-colors ${
+                          className={`block w-full text-left text-xs font-medium px-3 py-2 rounded-lg transition-all ${
                             selectedCategory === c
-                              ? "bg-foreground text-primary-foreground"
+                              ? "bg-accent text-accent-foreground font-semibold shadow-sm"
                               : "hover:bg-secondary text-foreground"
                           }`}
                         >
