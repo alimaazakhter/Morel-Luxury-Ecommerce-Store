@@ -80,7 +80,7 @@ export function ProductCard({ product: p }: { product: Product }) {
           <motion.button
             whileTap={{ scale: 0.96 }}
             onClick={() => addToCart(p)}
-            className="mt-3 w-full py-2 text-xs font-semibold border border-foreground text-foreground hover:bg-foreground hover:text-primary-foreground transition-colors rounded-sm"
+            className="mt-3 w-full py-2.5 text-xs font-semibold border border-border text-foreground bg-secondary hover:bg-accent hover:text-accent-foreground transition-all rounded-lg shadow-sm cursor-pointer"
           >
             Add to Cart
           </motion.button>

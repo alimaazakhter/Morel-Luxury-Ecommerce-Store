@@ -267,9 +267,9 @@ export function ProductListingPage() {
                           </div>
                           {p.stock > 0 && (
                             <button
-                              onClick={() => addToCart(p)}
-                              className="px-4 py-1.5 text-xs font-semibold border border-foreground rounded-sm hover:bg-foreground hover:text-primary-foreground transition-colors"
-                            >
+                               onClick={() => addToCart(p)}
+                               className="px-4 py-2 text-xs font-semibold border border-border text-foreground bg-secondary hover:bg-accent hover:text-accent-foreground transition-all rounded-lg shadow-sm cursor-pointer"
+                             >
                               Add to Cart
                             </button>
                           )}
