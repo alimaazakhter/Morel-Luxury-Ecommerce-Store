@@ -97,7 +97,7 @@ export function AdminPage() {
               </div>
               <button
                 type="submit"
-                className="w-full py-3 bg-foreground text-primary-foreground text-sm font-semibold rounded-md hover:bg-stone-800 transition-colors flex items-center justify-center gap-2"
+                className="w-full py-3 bg-accent text-accent-foreground text-xs font-semibold rounded-lg hover:bg-amber-600 transition-colors shadow-md flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Lock size={14} /> Unlock Admin Portal
               </button>
@@ -144,7 +144,7 @@ export function AdminPage() {
                   onClick={() => setTimeRange(range)}
                   className={`px-3 py-1 text-xs font-semibold rounded transition-colors ${
                     timeRange === range
-                      ? "bg-foreground text-primary-foreground"
+                      ? "bg-accent text-accent-foreground font-semibold shadow-sm"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >

@@ -201,7 +201,7 @@ export function CheckoutPage() {
                 </div>
                 <button
                   onClick={() => setStep("payment")}
-                  className="w-full py-3 bg-foreground text-primary-foreground text-sm font-semibold rounded-sm hover:bg-stone-800 transition-colors mt-4 flex items-center justify-center gap-1"
+                  className="w-full py-3 bg-accent text-accent-foreground text-xs font-semibold rounded-lg hover:bg-amber-600 transition-colors mt-4 flex items-center justify-center gap-1 shadow-md cursor-pointer"
                 >
                   Continue to Payment <ChevronRight size={14} />
                 </button>
@@ -301,7 +301,7 @@ export function CheckoutPage() {
                       setPaymentError(false);
                       setStep("review");
                     }}
-                    className="flex-1 py-3 bg-foreground text-primary-foreground text-sm font-semibold rounded-sm hover:bg-stone-800 transition-colors flex items-center justify-center gap-1"
+                    className="flex-1 py-3 bg-accent text-accent-foreground text-xs font-semibold rounded-lg hover:bg-amber-600 transition-colors flex items-center justify-center gap-1 shadow-md cursor-pointer"
                   >
                     Review Order <ChevronRight size={14} />
                   </button>
